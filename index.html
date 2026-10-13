@@ -339,7 +339,7 @@ document.querySelectorAll(".gallery button").forEach(b=>b.addEventListener("clic
 $("lightbox").addEventListener("click",()=>$("lightbox").hidden=true);
 
 // ===== Ucapan & RSVP ke Google Sheet =====
-const SCRIPT_URL = "__SCRIPT_URL__"; // link Web app Apps Script; kosong = kirim lewat WhatsApp
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby-UPbzmzRjJYJ5ZlRhT_ubUiLOk-vKWIKf7f9OfXGnOwCiMKUIMCvo85-uImlwJHeU4w/exec"; // link Web app Apps Script; kosong = kirim lewat WhatsApp
 const useSheet = /^https:\/\/script\.google\.com\//.test(SCRIPT_URL);
 $("f-hadir").addEventListener("change",()=>{$("f-jumlah").closest("label").hidden=$("f-hadir").selectedIndex===1});
 function fmtTime(iso){try{const d=new Date(iso);return d.toLocaleDateString("id-ID",{day:"numeric",month:"short",year:"numeric"})+" "+d.toLocaleTimeString("id-ID",{hour:"2-digit",minute:"2-digit"})}catch(e){return ""}}
